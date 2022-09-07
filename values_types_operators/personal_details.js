@@ -7,7 +7,7 @@ var gender = "Male";
 var maritalStatus = "Single";
 var phoneNumber = 9999999999;
 var jobDescription = "I am a UI Designer";
-var address = "Dubai";
+var address = "Kerala";
 
 console.log(jobDescription);
 console.log(name);
