@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>JS Practise</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body class="container-fluid">
+        <div class="row">
+            <div class="col-md-8" style="background: #f0ad4e; height: 655px;">
+                <div class="row text-center">
+                    <h1 style="font-size: 3.5em;">Profile</h1>
+                    <h4 id="job_description"></h4>
+                </div>    
+                <br>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3 style="font-size: 2.5em;">Details</h3>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <h3 style="font-size: 2.5em;">About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Name</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="name" style="font-size: 1.5em;"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Email</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="email" style="font-size: 1.5em;"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Date of Birth</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="dob" style="font-size: 1.5em;"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Gender</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="gender" style="font-size: 1.5em;">Male</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Marital Status</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="marital_status" style="font-size: 1.5em;"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Phone Number</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="phone" style="font-size: 1.5em;"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 style="font-size: 1.5em;">Address</h5>
+                    </div>
+                    <div class="col-md-2"><h5 style="font-size: 1.5em;">:</h5></div>
+                    <div class="col-md-5">
+                        <h5 id="addr" style="font-size: 1.5em;">Hyderabad</h5>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="width: 440px; height: 440px;" alt="Responsive image">
+                <br><br>
+                <h4 class="text-center"><a href="#">LinkedIn</a></h4>
+                <h4 class="text-center"><a href="#">Twitter</a></h4>
+            </div>
+        </div>
+    </body>
+    <script>
+        var name = "Tehja";
+        var email = "vedavyas.yeleswarapu@gmail.com";
+        var bDate = 16;
+        var bMonth = 02;
+        var bYear = 1997;
+        var gender = "Male";
+        var maritalStatus = "Married";
+        var phoneNumber = 8686093417;
+        var jobDescription = "I am a UI Designer";
+        var address = "Hyderabad";
+
+        document.getElementById("job_description").innerHTML = jobDescription;
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("dob").innerHTML = bDate+"/"+bMonth+"/"+bYear;
+        document.getElementById("gender").innerHTML = gender;
+        document.getElementById("marital_status").innerHTML = maritalStatus;
+        document.getElementById("phone").innerHTML = phoneNumber;
+        document.getElementById("addr").innerHTML = address;
+    </script>
+</html>
